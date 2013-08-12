@@ -1,0 +1,41 @@
+@import 'normalise';
+@import 'variables';
+@import 'type';
+@import 'grids';
+@import 'forms';
+@import 'buttons';
+@import 'ng';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: @brand-font;
+  color: @brand-black;
+}
+
+header {
+  width: 100%;
+  background: @brand-blue;
+  padding: 1em;
+  border-bottom: 1px solid @brand-black;
+
+  * {
+    color: #fff;
+    text-decoration: none;
+  };
+}
+
+.sub-header {
+  width: 100%;
+  background: @brand-light-grey;
+  padding: 1em;
+  margin: 0 0 1em;
+  border-bottom: 1px solid @brand-dark-grey;
+  text-align: center;
+}
+
+.desktop-centered {
+  .basic-centered;
+}
